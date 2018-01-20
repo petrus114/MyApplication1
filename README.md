@@ -14,3 +14,4 @@ pretendida, ou filtar por zona do país. Pode seleccionar o calendário, a classif
 ## Bugs
 
 Neste momento não conseguimos ver o palntel de todas as equipas, ao selecionarmos uma equipa, o plantel retornado será sempre o mesmo.
+O botao de retroceder do android não está a funcionar, pelo que se for precionado, encerra a aplicação.

@@ -19,7 +19,7 @@ import java.util.List;
 public class Main7Activity extends AppCompatActivity {
 
     ListView list;
-    String url = "http://www.maisfutebol.iol.pt/resultadoseclassificacoes/128/portugal/liga-nos";
+    String url = "http://globoesporte.globo.com/futebol/futebol-internacional/futebol-portugues/";
     List listaEquipas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class Main7Activity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getApplicationContext(), Main7Activity.class);
-                intent.putExtra("url", "http://www.maisfutebol.iol.pt/resultadoseclassificacoes/128/portugal/liga-nos");
+                intent.putExtra("url", "http://globoesporte.globo.com/futebol/futebol-internacional/futebol-portugues/");
                 startActivity(intent);
                 finish();
             }
@@ -65,9 +65,9 @@ public class Main7Activity extends AppCompatActivity {
 
     private void actualizarListaEquipasCont(Document fulldoc) {
         List<String> listaEquipasTemp = new ArrayList<>();
-        Elements els = fulldoc.select(".tableJogos > ul > li");
+        Elements els = fulldoc.select(".tabela-body-linha");
         for(int k = 0; k < els.size() - 1; ++k){
-//.topNews > li
+
             listaEquipasTemp.add(els.get(k).text());
         }
         listaEquipas.addAll(listaEquipasTemp);

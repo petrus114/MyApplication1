@@ -15,6 +15,11 @@
             android:title="Classificação" />
 
         <item
+            android:id="@+id/calendario"
+            android:icon="@drawable/calend"
+            android:title="Calendário" />
+
+        <item
             android:id="@+id/news"
             android:icon="@drawable/news"
             android:title="Noticías" />

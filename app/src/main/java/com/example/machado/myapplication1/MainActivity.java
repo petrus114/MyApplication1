@@ -25,7 +25,7 @@ import android.widget.FrameLayout;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity{
-       // implements NavigationView.OnNavigationItemSelectedListener
+
 
     protected Toolbar toolbar;
     protected FrameLayout layout;
@@ -41,11 +41,7 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_main);
 
-//       createDrawer();
 //
-//       layout = (FrameLayout) findViewById(R.id.content_frame);
-//
-//       getLayoutInflater().inflate(R.layout.content_main, layout);
 
         bd = new AdaptadorBaseDados(this).open();
 
@@ -94,13 +90,13 @@ public class MainActivity extends AppCompatActivity{
         }
         else{
             if(bd.getPasswordFromUser(user).equals(pass)){
-                //Toast.makeText(this, "Login efectuado", Toast.LENGTH_LONG).show();//login ok
+
                 AlertDialog alertDialog;
                 alertDialog = new AlertDialog.Builder(this).create();
                 alertDialog.setTitle("Login Efectuado!");
                 alertDialog.setMessage("Bem Vindo! " + user );
                 alertDialog.show();
-                ///passar p activity
+
                 Intent intent = new Intent(this, Main2Activity.class);
                 startActivity(intent);
                 finish();
@@ -112,84 +108,4 @@ public class MainActivity extends AppCompatActivity{
         }
     }
 
-//    public void createDrawer(){
-//        toolbar = (Toolbar) findViewById(R.id.toolbar);
-//
-//        setSupportActionBar(toolbar);
-//        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-//        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-//                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-//        drawer.addDrawerListener(toggle);
-//        toggle.syncState();
-//        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-//        navigationView.setNavigationItemSelectedListener(this);
-//    }
-//
-//    @Override
-//    public void onBackPressed() {
-//        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-//        if (drawer.isDrawerOpen(GravityCompat.START)) {
-//            drawer.closeDrawer(GravityCompat.START);
-//        } else {
-//            super.onBackPressed();
-//        }
-//    }
-//
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//         Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.main, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//         Handle action bar item clicks here. The action bar will
-//         automatically handle clicks on the Home/Up button, so long
-//         as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
-//
-//    @SuppressWarnings("StatementWithEmptyBody")
-//    @Override
-//    public boolean onNavigationItemSelected(MenuItem item) {
-//         Handle navigation view item clicks here.
-//        int id = item.getItemId();
-//
-//        if (id == R.id.dashboard) {
-//            Intent intent = new Intent(this, Dashboard.class);
-//            startActivity(intent);
-//            finish();
-//        } else if (id == R.id.agenda) {
-//            Intent intent = new Intent(this, Agenda.class);
-//            startActivity(intent);
-//            finish();
-//
-//        } else if (id == R.id.praias) {
-//            Intent intent = new Intent(this, Praias.class);
-//            startActivity(intent);
-//            finish();
-//
-//        } else if (id == R.id.tutoriais) {
-//            Intent intent = new Intent(this, Tutoriais.class);
-//            startActivity(intent);
-//            finish();
-//        }
-//        } else if (id == R.id.nav_share) {
-//
-//        } else if (id == R.id.nav_send) {
-//
-//        }
-//
-//        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-//        drawer.closeDrawer(GravityCompat.START);
-//        return true;
-//    }
 }

@@ -55,7 +55,7 @@ public class Main4Activity extends AppCompatActivity {
         List<String> listaEquipasTemp = new ArrayList<>();
         Elements els = fulldoc.select(".tdnumber,.numeroPlayer, .tdNomeJogador");
         for(int k = 0; k < els.size() - 1; ++k){
-//.tdnumber,.numeroPlayer, .tdNomeJogador
+
             listaEquipasTemp.add(els.get(k).text());
         }
         listaEquipas.addAll(listaEquipasTemp);

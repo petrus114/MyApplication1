@@ -35,10 +35,20 @@ public class Main3Activity extends AppCompatActivity {
         listaNorte.add("Boavista Futebol Clube");
         listaNorte.add("Sporting Clube de Braga");
         listaNorte.add("Vitória Sport Clube");
+        listaNorte.add("Rio Ave Futebol Clube");
+        listaNorte.add("Futebol Clube Paços de Ferreira");
+        listaNorte.add("Moreirense Futebol Clube");
+        listaNorte.add("Grupo Desportivo de Chaves");
+        listaNorte.add("Clube Desportivo das Aves");
 
         listaCentro = new ArrayList<>();
         listaCentro.add("Clube de Futebol Os Belenenses ");
         listaCentro.add("Clube Desportivo Feirense");
+        listaCentro.add("Grupo Desportivo Estoril Praia");
+        listaCentro.add("Sport Lisboa e Benfica");
+        listaCentro.add("Sporting Clube de Portugal");
+        listaCentro.add("Clube Desportivo de Tondela");
+        listaCentro.add("Vitótia Futebol Clube");
 
         listaSul = new ArrayList<>();
         listaSul.add("Portimonense Sporting Clube");

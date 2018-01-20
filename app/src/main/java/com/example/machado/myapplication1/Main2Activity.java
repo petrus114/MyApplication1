@@ -83,14 +83,18 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.equipas) {
             Intent intent = new Intent(this, Main3Activity.class);
             startActivity(intent);
             finish(); // Handle the camera action
       }
-//          else if (id == R.id.nav_gallery) {
-//
-//        } else if (id == R.id.nav_slideshow) {
+         else if (id == R.id.news) {
+            Intent intent = new Intent(this, Main3Activity.class);
+            startActivity(intent);
+            finish();
+
+        }
+  //      } else if (id == R.id.nav_slideshow) {
 //
 //        } else if (id == R.id.nav_manage) {
 //

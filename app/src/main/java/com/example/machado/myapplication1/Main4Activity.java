@@ -53,9 +53,9 @@ public class Main4Activity extends AppCompatActivity {
 
     private void actualizarListaEquipasCont(Document fulldoc) {
         List<String> listaEquipasTemp = new ArrayList<>();
-        Elements els = fulldoc.select(".tdnumber,.numeroPlayer, .tdNomeJogador");
+        Elements els = fulldoc.select(".topNews");
         for(int k = 0; k < els.size() - 1; ++k){
-
+//.tdnumber,.numeroPlayer, .tdNomeJogador
             listaEquipasTemp.add(els.get(k).text());
         }
         listaEquipas.addAll(listaEquipasTemp);

@@ -24,7 +24,7 @@
         <activity android:name=".AdaptadorBaseDados" />
         <activity
             android:name=".Main2Activity"
-            android:label="@string/title_activity_main2"
+            android:label="SoFutebol"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Main3Activity"></activity>
         <activity android:name=".Main4Activity"></activity>

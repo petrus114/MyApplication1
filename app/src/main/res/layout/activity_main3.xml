@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.machado.myapplication1.Main3Activity">
 
+    
+
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="wrap_content"

@@ -8,6 +8,16 @@
             android:id="@+id/nav_camera"
             android:icon="@drawable/teams"
             android:title="Equipas" />
+
+        <item
+            android:id="@+id/table"
+            android:icon="@drawable/table"
+            android:title="Classificação" />
+
+        <item
+            android:id="@+id/news"
+            android:icon="@drawable/news"
+            android:title="Noticías" />
     </group>
 
 </menu>

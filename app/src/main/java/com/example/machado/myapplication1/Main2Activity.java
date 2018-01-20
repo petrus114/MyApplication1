@@ -78,6 +78,9 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
         finish();
         }
          else if (id == R.id.table) {
+            Intent intent = new Intent(this, Main7Activity.class);
+            startActivity(intent);
+            finish();
 
        }
 

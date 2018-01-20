@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main6Activity extends AppCompatActivity {
+public class Main7Activity extends AppCompatActivity {
 
     ListView list;
     String url = "http://www.maisfutebol.iol.pt/resultadoseclassificacoes/128/portugal/liga-nos";
@@ -24,16 +24,16 @@ public class Main6Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main6);
+        setContentView(R.layout.activity_main7);
 
-        list = findViewById(R.id.listcalend);
+        list = findViewById(R.id.listclass);
         listaEquipas = new ArrayList();
         ListaEquipas();
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getApplicationContext(), Main6Activity.class);
+                Intent intent = new Intent(getApplicationContext(), Main7Activity.class);
                 intent.putExtra("url", "http://www.maisfutebol.iol.pt/resultadoseclassificacoes/128/portugal/liga-nos");
                 startActivity(intent);
                 finish();
@@ -67,7 +67,7 @@ public class Main6Activity extends AppCompatActivity {
         List<String> listaEquipasTemp = new ArrayList<>();
         Elements els = fulldoc.select(".tableJogos > ul > li");
         for(int k = 0; k < els.size() - 1; ++k){
-
+//.topNews > li
             listaEquipasTemp.add(els.get(k).text());
         }
         listaEquipas.addAll(listaEquipasTemp);

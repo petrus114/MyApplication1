@@ -94,9 +94,12 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
             finish();
 
         }
-  //      } else if (id == R.id.nav_slideshow) {
-//
-//        } else if (id == R.id.nav_manage) {
+         else if (id == R.id.calendario) {
+        Intent intent = new Intent(this, Main6Activity.class);
+        startActivity(intent);
+        finish();
+        }
+//          else if (id == R.id.nav_manage) {
 //
 //        } else if (id == R.id.nav_share) {
 //

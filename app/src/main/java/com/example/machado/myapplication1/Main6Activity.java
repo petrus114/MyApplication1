@@ -16,25 +16,25 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main5Activity extends AppCompatActivity {
+public class Main6Activity extends AppCompatActivity {
 
     ListView list;
-    String url = "http://www.maisfutebol.iol.pt/ultimas";
+    String url = "http://www.maisfutebol.iol.pt/resultadoseclassificacoes/128/portugal/liga-nos";
     List listaEquipas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main5);
+        setContentView(R.layout.activity_main6);
 
-        list = findViewById(R.id.listNews);
+        list = findViewById(R.id.listcalend);
         listaEquipas = new ArrayList();
         ListaEquipas();
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getApplicationContext(), Main5Activity.class);
-                intent.putExtra("url", "http://www.maisfutebol.iol.pt/ultimas");
+                Intent intent = new Intent(getApplicationContext(), Main6Activity.class);
+                intent.putExtra("url", "http://www.maisfutebol.iol.pt/resultadoseclassificacoes/128/portugal/liga-nos");
                 startActivity(intent);
                 finish();
             }
@@ -65,9 +65,9 @@ public class Main5Activity extends AppCompatActivity {
 
     private void actualizarListaEquipasCont(Document fulldoc) {
         List<String> listaEquipasTemp = new ArrayList<>();
-        Elements els = fulldoc.select(".topNews > li");
+        Elements els = fulldoc.select(".tableJogos > ul > li");
         for(int k = 0; k < els.size() - 1; ++k){
-
+//.topNews > li
             listaEquipasTemp.add(els.get(k).text());
         }
         listaEquipas.addAll(listaEquipasTemp);

@@ -7,7 +7,7 @@
     tools:context="com.example.machado.myapplication1.Main5Activity">
 
     <ListView
-        android:id="@+id/list"
+        android:id="@+id/listNews"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_marginBottom="8dp"

@@ -89,7 +89,7 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
             finish(); // Handle the camera action
       }
          else if (id == R.id.news) {
-            Intent intent = new Intent(this, Main3Activity.class);
+            Intent intent = new Intent(this, Main5Activity.class);
             startActivity(intent);
             finish();
 
